@@ -1,0 +1,14 @@
+<mat-card class="profile-container">
+    <img height="220px" width="220px" mat-card-image [src]="this.user?.avatar" alt="user profile">
+    <div>
+        <mat-card-header>
+            <mat-card-subtitle>User Name</mat-card-subtitle>
+            <mat-card-title>{{this.user?.username}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="this.goToProfile()" class="full-width" color="primary">Go
+                To
+                Profile</button>
+        </mat-card-actions>
+    </div>
+</mat-card>

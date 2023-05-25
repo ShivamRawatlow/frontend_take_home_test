@@ -1,0 +1,28 @@
+.history-container {
+}
+.search-history-item {
+  max-width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid grey;
+}
+.history-header {
+  max-width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.center-margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-item {
+  background-color: rgb(225, 225, 225);
+}
+
+.clear-history-button {
+  margin-top: 1rem;
+  width: 100%;
+}

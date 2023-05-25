@@ -1,0 +1,5 @@
+<div class="container">
+    <app-search style="width: 60%;" />
+    <app-profile *ngIf="this.currentUser !== null" [user]="this.currentUser" />
+    <h3 *ngIf="this.currentUser === null">No results to display</h3>
+</div>

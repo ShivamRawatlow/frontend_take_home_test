@@ -1,0 +1,17 @@
+<div class="history-container">
+    <div class="history-header center-margin">
+        <h2 class="header-item" style="flex-basis: 30%; text-align: center;">Search Term</h2>
+        <h2 class="header-item" style="flex-basis: 70%; text-align: center;">Search Result</h2>
+    </div>
+    <div *ngFor="let search of this.searchHistory" class="search-history-item center-margin">
+        <h2 style="flex-basis: 30%; text-align: center; ">{{search.searchTerm}}</h2>
+        <app-profile style="flex-basis: 70%; text-align: center;" *ngIf="search.searchResult !== null"
+            [user]="search.searchResult" />
+        <div *ngIf="search.searchResult === null">User Not Found</div>
+    </div>
+    <div *ngIf="this.searchHistory.length >= 1" style="width: 60%;" class="center-margin">
+        <button class="clear-history-button" mat-raised-button color="primary" (click)="this.clearSearchHistory()">Clear
+            Search
+            History</button>
+    </div>
+</div>
