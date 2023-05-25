@@ -6,22 +6,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Unit test cases are written only for the service
 
-## Running end-to-end tests
+## Description
+I'm using  'https://api.github.com/users/' url to get the user details. It returns a single user on every search. With the help of service I'm saving the data into localstorage to persist it even after app is shut down.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+##
+Things that can be added to improve performance for a larger scale application : 
 
-## Further help
+* Standalone Components along with lazy loading can be implemented
+* The new angular features like esbuild dev server can be used to improve development time
+* The new angular signal variables can be used to provide better control on change detection
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
